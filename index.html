@@ -14,16 +14,16 @@
     .credentials { font-size: 1.1rem; margin-bottom: 1rem; }
     .contact { margin-top: 2rem; font-size: 1rem; }
     .highlight { color: #0074d9; font-weight: bold; }
-    .linkedin-embed { display: flex; align-items: center; gap: 16px; margin-bottom: 2rem; }
-    .linkedin-embed img { width: 80px; height: 80px; border-radius: 50%; border: 2px solid #0077b5; }
-    .linkedin-embed-info { line-height: 1.4; }
-    .linkedin-embed-info a { color: #0077b5; font-weight: bold; text-decoration: none; }
-    .linkedin-embed-info a:hover { text-decoration: underline; }
+    .profile-photo { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #0077b5; margin-bottom: 1rem; }
+    .center { text-align: center; }
+    .linkedin-link { color: #0077b5; font-weight: bold; text-decoration: none;}
+    .linkedin-link:hover { text-decoration: underline; }
+    .website-link { color: #005691; font-weight: bold; text-decoration: none; }
+    .website-link:hover { text-decoration: underline; }
     @media (max-width: 600px) {
       section { padding: 1rem; }
       h1 { font-size: 1.5rem; }
-      .linkedin-embed { flex-direction: column; align-items: flex-start; }
-      .linkedin-embed img { width: 60px; height: 60px; }
+      .profile-photo { width: 80px; height: 80px; }
     }
   </style>
 </head>
@@ -33,39 +33,50 @@
     <div class="credentials">
       Board-Certified in <span class="highlight">Infectious Diseases</span> &amp; <span class="highlight">Internal Medicine</span>
     </div>
-    <div>Southern California ID Associates &mdash; Newport Beach, CA</div>
+    <div>
+      Southern California ID Associates &mdash; Newport Beach, CA<br>
+      <a class="website-link" href="https://socalid.com" target="_blank" rel="noopener">socalid.com</a>
+    </div>
   </header>
 
-  <section>
-    <div class="linkedin-embed">
-      <a href="https://www.linkedin.com/in/jae-hyun-shin-infexn/" target="_blank" rel="noopener">
-        <!-- Replace the src below with your actual LinkedIn profile image URL -->
-        <img src="https://media.licdn.com/dms/image/C5603AQE5y9J2w2zW1w/profile-displayphoto-shrink_200_200/0/1517461159334?e=2147483647&v=beta&t=example" alt="Jae Hyun Shin, MD LinkedIn Profile">
+  <section class="center">
+    <img
+      class="profile-photo"
+      src="https://media.licdn.com/dms/image/C5603AQE5y9J2w2zW1w/profile-displayphoto-shrink_200_200/0/1517461159334?e=2147483647&v=beta&t=example"
+      alt="Jae Hyun Shin, MD LinkedIn Profile Photo">
+    <div>
+      <a class="linkedin-link" href="https://www.linkedin.com/in/jae-hyun-shin-infexn/" target="_blank" rel="noopener">
+        View my LinkedIn profile
       </a>
-      <div class="linkedin-embed-info">
-        <a href="https://www.linkedin.com/in/jae-hyun-shin-infexn/" target="_blank" rel="noopener">
-          Jae Hyun Shin, MD
-        </a><br>
-        Infectious Diseases &amp; Internal Medicine Specialist<br>
-        Southern California ID Associates<br>
-        <span style="font-size: 14px; color: #555;">
-          Former Faculty, University of Virginia Health System
-        </span>
-      </div>
     </div>
+  </section>
 
+  <section>
     <h2>About Me</h2>
     <p>
-      I am a board-certified physician specializing in <strong>Infectious Diseases</strong> and <strong>Internal Medicine</strong>, with a passion for advancing patient care and medical knowledge. My clinical and academic journey includes faculty and clinical roles at the <strong>University of Virginia Health System</strong> and my current position at <strong>Southern California ID Associates</strong>.
+      I am a board-certified physician specializing in <strong>Infectious Diseases</strong> and <strong>Internal Medicine</strong>, with clinical and research expertise in <strong>Clostridioides difficile infection</strong>, the microbiome, and infection in older adults. I serve patients in Newport Beach, California, at Southern California ID Associates, and previously held an Assistant Professor position at the University of Virginia School of Medicine, where I led clinical and research efforts in complicated C. difficile infection.
     </p>
+  </section>
+
+  <section>
+    <h2>Training &amp; Education</h2>
+    <ul>
+      <li><strong>Medical School:</strong> Seoul National University College of Medicine</li>
+      <li><strong>Internal Medicine Residency:</strong> Rochester General Hospital, Rochester, NY</li>
+      <li><strong>Infectious Diseases Fellowship:</strong> University of Virginia Medical Center, Charlottesville, VA</li>
+      <li><strong>Research Fellowship (T32):</strong> University of Virginia</li>
+    </ul>
   </section>
 
   <section>
     <h2>Areas of Expertise</h2>
     <ul>
-      <li>Diagnosis and management of complex infectious diseases</li>
-      <li>Antimicrobial stewardship and resistance prevention</li>
-      <li>Hospital-acquired and community-acquired infections</li>
+      <li>General infectious diseases</li>
+      <li>Clostridioides difficile infection (clinical and research focus)</li>
+      <li>Microbiome and immune response in infection</li>
+      <li>Infections in older adults</li>
+      <li>Antimicrobial stewardship</li>
+      <li>Hospital- and community-acquired infections</li>
       <li>HIV/AIDS and viral hepatitis management</li>
       <li>Travel and tropical medicine</li>
       <li>Infection control and epidemiology</li>
@@ -75,30 +86,69 @@
   <section>
     <h2>Academic Achievements</h2>
     <ul>
-      <li>Faculty appointment at the <strong>University of Virginia Health System</strong></li>
-      <li>Board Certification in Infectious Diseases and Internal Medicine</li>
-      <li>Peer-reviewed publications and presentations at national conferences</li>
-      <li>Mentorship of medical students, residents, and fellows in infectious diseases</li>
-      <li>Active participation in clinical research and quality improvement initiatives</li>
+      <li>Assistant Professor, University of Virginia School of Medicine (2018 – 2024)</li>
+      <li>Board Certification: Infectious Diseases &amp; Internal Medicine</li>
+      <li>Peer-reviewed publications and national conference presentations</li>
+      <li>Mentorship of medical students, residents, and fellows</li>
+      <li>Active participation in clinical research and quality improvement</li>
     </ul>
   </section>
 
   <section>
-    <h2>Clinical Experience</h2>
-    <ul>
-      <li>Current: <strong>Southern California ID Associates</strong>, Newport Beach, CA</li>
-      <li>Previous: <strong>University of Virginia Health System</strong> – Infectious Diseases Faculty &amp; Clinician</li>
-      <li>Extensive experience in inpatient and outpatient infectious diseases consultation</li>
-      <li>Collaboration with multidisciplinary teams for optimal patient outcomes</li>
+    <h2>Selected Publications</h2>
+    <ul id="pub-list">
+      <li>Loading publications from NCBI...</li>
     </ul>
+    <div style="font-size: 0.9em;">
+      <a href="https://www.ncbi.nlm.nih.gov/myncbi/jae%20hyun.shin.1/bibliography/public/" target="_blank" rel="noopener">
+        View full bibliography on NCBI
+      </a>
+    </div>
+    <script>
+      // Fetch and display publications from NCBI bibliography (public)
+      // NCBI E-utilities: esummary with static PMIDs for demonstration
+      (function() {
+        const pubList = document.getElementById('pub-list');
+        // Replace the array below with your actual PMIDs from your NCBI bibliography
+        const pmids = [
+          '38312345', // Example PMID
+          '37456789', // Example PMID
+          '36234567'  // Example PMID
+        ];
+        if (pmids.length === 0) {
+          pubList.innerHTML = '<li>No publications found.</li>';
+          return;
+        }
+        fetch('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=' + pmids.join(',') + '&retmode=json')
+          .then(response => response.json())
+          .then(data => {
+            pubList.innerHTML = '';
+            pmids.forEach(pmid => {
+              const pub = data.result[pmid];
+              if (pub) {
+                const li = document.createElement('li');
+                li.innerHTML = `<a href="https://pubmed.ncbi.nlm.nih.gov/${pmid}/" target="_blank" rel="noopener">${pub.title}</a> <span style="color:#555;">(${pub.pubdate})</span>`;
+                pubList.appendChild(li);
+              }
+            });
+            if (!pubList.hasChildNodes()) {
+              pubList.innerHTML = '<li>No publications found.</li>';
+            }
+          })
+          .catch(() => {
+            pubList.innerHTML = '<li>Unable to load publications from NCBI at this time.</li>';
+          });
+      })();
+    </script>
   </section>
 
   <section>
     <h2>Contact</h2>
     <div class="contact">
-      <strong>Practice Location:</strong> Southern California ID Associates, Newport Beach, CA<br>
-      <strong>Email:</strong> [Your Professional Email]<br>
-      <strong>Phone:</strong> [Your Practice Phone Number]
+      <strong>Practice Location:</strong> Southern California ID Associates, 320 Superior Ave, Ste 370, Newport Beach, CA 92663<br>
+      <strong>Email:</strong> <a href="mailto:idclinic@socalid.com">idclinic@socalid.com</a><br>
+      <strong>Phone:</strong> <a href="tel:19495153590">(949) 515-3590</a><br>
+      <strong>Website:</strong> <a class="website-link" href="https://socalid.com" target="_blank" rel="noopener">socalid.com</a>
     </div>
   </section>
 </body>
