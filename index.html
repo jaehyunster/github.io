@@ -94,55 +94,42 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Selected Publications</h2>
-    <ul id="pub-list">
-      <li>Loading publications from NCBI...</li>
-    </ul>
-    <div style="font-size: 0.9em;">
-      <a href="https://www.ncbi.nlm.nih.gov/myncbi/jae%20hyun.shin.1/bibliography/public/" target="_blank" rel="noopener">
-        View full bibliography on NCBI
+ <section>
+  <h2>Selected Publications</h2>
+  <ul>
+    <li>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/40185558/" target="_blank" rel="noopener">
+        [Insert Title of PMID 40185558 Here]
       </a>
-    </div>
-    <script>
-      // Fetch and display publications from NCBI bibliography (public)
-      // NCBI E-utilities: esummary with static PMIDs for demonstration
-      (function() {
-        const pubList = document.getElementById('pub-list');
-        // Replace the array below with your actual PMIDs from your NCBI bibliography
-        const pmids = [
-          '40185558', // Example PMID
-          '40297203', // Example PMID
-          '40222582'  // Example PMID
-          '37953816'  // Example PMID
-          '23922367'  // Example PMID
-        ];
-        if (pmids.length === 0) {
-          pubList.innerHTML = '<li>No publications found.</li>';
-          return;
-        }
-        fetch('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=' + pmids.join(',') + '&retmode=json')
-          .then(response => response.json())
-          .then(data => {
-            pubList.innerHTML = '';
-            pmids.forEach(pmid => {
-              const pub = data.result[pmid];
-              if (pub) {
-                const li = document.createElement('li');
-                li.innerHTML = `<a href="https://pubmed.ncbi.nlm.nih.gov/${pmid}/" target="_blank" rel="noopener">${pub.title}</a> <span style="color:#555;">(${pub.pubdate})</span>`;
-                pubList.appendChild(li);
-              }
-            });
-            if (!pubList.hasChildNodes()) {
-              pubList.innerHTML = '<li>No publications found.</li>';
-            }
-          })
-          .catch(() => {
-            pubList.innerHTML = '<li>Unable to load publications from NCBI at this time.</li>';
-          });
-      })();
-    </script>
-  </section>
+    </li>
+    <li>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/40297203/" target="_blank" rel="noopener">
+        [Insert Title of PMID 40297203 Here]
+      </a>
+    </li>
+    <li>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/40222582/" target="_blank" rel="noopener">
+        [Insert Title of PMID 40222582 Here]
+      </a>
+    </li>
+    <li>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/37953816/" target="_blank" rel="noopener">
+        [Insert Title of PMID 37953816 Here]
+      </a>
+    </li>
+    <li>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/23922367/" target="_blank" rel="noopener">
+        [Insert Title of PMID 23922367 Here]
+      </a>
+    </li>
+  </ul>
+  <div style="font-size: 0.9em;">
+    <a href="https://www.ncbi.nlm.nih.gov/myncbi/jae%20hyun.shin.1/bibliography/public/" target="_blank" rel="noopener">
+      View full bibliography on NCBI
+    </a>
+  </div>
+</section>
+
 
   <section>
     <h2>Contact</h2>
